@@ -10,7 +10,6 @@ import Contact from "./components/contact/Contact"
 import Home from "./components/home/Home"
 import Signup from "./pages/signup/Signup"
 import Footer from "./components/common/footer/Footer"
-import Header from "./components/common/header/Header"
 
 function App() {
   return (
