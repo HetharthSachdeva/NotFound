@@ -4,7 +4,7 @@ import { price } from "../../dummydata"
 const PriceCard = () => {
   return (
     <>
-      {price.map((val) => (
+      {/* {price.map((val) => (
         <div className='items shadow'>
           <h4>{val.name}</h4>
           <h1>
@@ -14,7 +14,7 @@ const PriceCard = () => {
           <p>{val.desc}</p>
           <button className='outline-btn'>GET STARTED</button>
         </div>
-      ))}
+      ))} */}
     </>
   )
 }

@@ -1,41 +1,37 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import Head from "./Head"
 import "./header.css"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Header = () => {
+  useEffect(()=>{
+    AOS.init();
+  },[])
   const [click, setClick] = useState(false)
 
   return (
     <>
       <Head />
-      <header>
+      <header data-aos="fade-left" data-aos-duration="2000">
         <nav className='flexSB'>
           <ul className={click ? "mobile-nav" : "flexSB "} onClick={() => setClick(false)}>
             <li>
               <Link to='/'>Home</Link>
             </li>
             <li>
-              <Link to='/courses'>All Courses</Link>
+              <Link to='/team'>Dashboard</Link>
             </li>
             <li>
-              <Link to='/about'>About</Link>
+              <Link to='/courses'>VR/AR Games</Link>
             </li>
             <li>
-              <Link to='/team'>Team</Link>
-            </li>
-            <li>
-              <Link to='/pricing'>Pricing</Link>
-            </li>
-            <li>
-              <Link to='/journal'>Journal</Link>
-            </li>
-            <li>
-              <Link to='/contact'>Contact</Link>
+              <Link to='/about'>Features</Link>
             </li>
           </ul>
           <div className='start'>
-            <div className='button'>GET CERTIFICATE</div>
+            <div className='button'>LOGOUT</div>
           </div>
           <button className='toggle' onClick={() => setClick(!click)}>
             {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}
