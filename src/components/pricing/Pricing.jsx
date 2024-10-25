@@ -1,8 +1,8 @@
 import React from "react"
 import Back from "../common/back/Back"
-import Faq from "./Faq"
 import PriceCard from "./PriceCard"
 import "./price.css"
+import Faq from "./Faq"
 
 const Pricing = () => {
   return (

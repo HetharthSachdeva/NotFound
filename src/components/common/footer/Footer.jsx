@@ -5,24 +5,24 @@ import "./footer.css"
 const Footer = () => {
   return (
     <>
-    <section className='newletter'>
-      <div className='container flexSB'>
-        <div className='left row'>
-          <h1>Stay Updated with ARWellness</h1>
-          <span>Get the latest insights on VR-based wellness solutions for seniors</span>
+      {/* <section className='newletter'>
+        <div className='container flexSB'>
+          <div className='left row'>
+            <h1>Newsletter - Stay tune and get the latest update</h1>
+            <span>Far far away, behind the word mountains</span>
+          </div>
+          <div className='right row'>
+            <input type='text' placeholder='Enter email address' />
+            <i className='fa fa-paper-plane'></i>
+          </div>
         </div>
-        <div className='right row'>
-          <input type='text' placeholder='Enter email address' />
-          <i className='fa fa-paper-plane'></i>
-        </div>
-      </div>
-    </section>
+      </section> */}
       <footer>
         <div className='container padding'>
           <div className='box logo'>
-            <h1>ARWellness</h1>
-            <span>VR WELLNESS SOLUTIONS FOR SENIORS</span>
-            <p>Enhancing seniors' quality of life through VR-based physical therapy, cognitive training, and social connection.</p>
+            <h1>ACADEMIA</h1>
+            <span>A VR/AR COMPANION</span>
+            <p>Your Personalized Guide to Wellness in Every Reality</p>
 
             <i className='fab fa-facebook-f icon'></i>
             <i className='fab fa-twitter icon'></i>
@@ -35,7 +35,7 @@ const Footer = () => {
               <li>Services</li>
               <li>Programs</li>
               <li>Blog</li>
-              <li>Contact Us</li>
+              <li>Contact us</li>
             </ul>
           </div>
           <div className='box link'>
@@ -48,10 +48,10 @@ const Footer = () => {
               <li>Feedback</li>
             </ul>
           </div>
-          <div className='box'>
-            <h3>Recent Posts</h3>
+          {/* <div className='box'>
+            <h3>Recent Post</h3>
             {blog.slice(0, 3).map((val) => (
-              <div className='items flexSB' key={val.id}>
+              <div className='items flexSB'>
                 <div className='img'>
                   <img src={val.cover} alt='' />
                 </div>
@@ -68,21 +68,21 @@ const Footer = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
           <div className='box last'>
-            <h3>Have Questions?</h3>
+            <h3>Have a Questions?</h3>
             <ul>
               <li>
                 <i className='fa fa-map'></i>
-                123 Wellness St., Virtual World, Immersive City, VR
+                Great Eastern Rd, Amanaka, Raipur, Chhattisgarh 492010
               </li>
               <li>
                 <i className='fa fa-phone-alt'></i>
-                +1 800 123 4567
+                +91 9818248015
               </li>
               <li>
                 <i className='fa fa-paper-plane'></i>
-                support@arwellness.com
+                notfound@nitrrgmail.com
               </li>
             </ul>
           </div>
@@ -90,7 +90,7 @@ const Footer = () => {
       </footer>
       <div className='legal'>
         <p>
-          Copyright ©2024 All rights reserved | This platform is developed with <i className='fa fa-heart'></i> by Team NotFound
+        Copyright ©2024 All rights reserved | This platform is developed with <i className='fa fa-heart'></i> by Team NotFound
         </p>
       </div>
     </>

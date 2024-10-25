@@ -1,13 +1,17 @@
-import React from "react"
-
+import React, { useEffect } from "react"
+import AOS from "aos";
+import "aos/dist/aos.css"
 const Head = () => {
+  useEffect(()=>{
+    AOS.init();
+  },[])
   return (
     <>
       <section className='head'>
-        <div className='container flexSB'>
-          <div className='logo'>
-            <h1>ARWellness</h1>
-            <span>Your Fitness Companion!</span>
+        <div className='container flexSB' data-aos="fade-right" data-aos-duration="2000">
+          <div className='logo' >
+            <h1>VRWellness</h1>
+            <span>VR/AR COMPANION</span>
           </div>
 
           <div className='social'>

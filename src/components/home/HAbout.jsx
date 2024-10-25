@@ -1,15 +1,14 @@
 import React from "react"
-import { coursesCard } from "../../dummydata"
-import "../allcourses/courses.css"
 import OnlineCourses from "../allcourses/OnlineCourses"
 import Heading from "../common/heading/Heading"
+import "../allcourses/courses.css"
+import { coursesCard } from "../../dummydata"
 
 const HAbout = () => {
   return (
     <>
       <section className='homeAbout'>
         <div className='container'>
-          <Heading subtitle='our courses' title='explore our popular programs' />
 
           <div className='coursesCard'>
             {/* copy code form  coursesCard */}

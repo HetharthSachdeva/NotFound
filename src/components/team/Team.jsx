@@ -1,9 +1,9 @@
 import React from "react"
-import Awrapper from "../about/Awrapper"
-import "../about/about.css"
 import Back from "../common/back/Back"
 import TeamCard from "./TeamCard"
 import "./team.css"
+import Awrapper from "../about/Awrapper"
+import "../about/about.css"
 
 const Team = () => {
   return (

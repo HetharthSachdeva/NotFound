@@ -4,7 +4,7 @@ import { blog } from "../../dummydata"
 const BlogCard = () => {
   return (
     <>
-      {blog.map((val) => (
+      {/* {blog.map((val) => (
         <div className='items shadow'>
           <div className='img'>
             <img src={val.cover} alt='' />
@@ -28,7 +28,7 @@ const BlogCard = () => {
             <p>{val.desc}</p>
           </div>
         </div>
-      ))}
+      ))} */}
     </>
   )
 }
