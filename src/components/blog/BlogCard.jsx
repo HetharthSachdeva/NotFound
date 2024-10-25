@@ -4,11 +4,7 @@ import { blog } from "../../dummydata"
 const BlogCard = () => {
   return (
     <>
-<<<<<<< HEAD
       {/* {blog.map((val) => (
-=======
-      {blog.map((val) => (
->>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
         <div className='items shadow'>
           <div className='img'>
             <img src={val.cover} alt='' />
@@ -32,11 +28,7 @@ const BlogCard = () => {
             <p>{val.desc}</p>
           </div>
         </div>
-<<<<<<< HEAD
       ))} */}
-=======
-      ))}
->>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
     </>
   )
 }

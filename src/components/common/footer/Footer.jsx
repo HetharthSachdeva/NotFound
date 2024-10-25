@@ -5,7 +5,6 @@ import "./footer.css"
 const Footer = () => {
   return (
     <>
-<<<<<<< HEAD
       {/* <section className='newletter'>
         <div className='container flexSB'>
           <div className='left row'>
@@ -24,26 +23,6 @@ const Footer = () => {
             <h1>ACADEMIA</h1>
             <span>A VR/AR COMPANION</span>
             <p>Your Personalized Guide to Wellness in Every Reality</p>
-=======
-    <section className='newletter'>
-      <div className='container flexSB'>
-        <div className='left row'>
-          <h1>Stay Updated with ARWellness</h1>
-          <span>Get the latest insights on VR-based wellness solutions for seniors</span>
-        </div>
-        <div className='right row'>
-          <input type='text' placeholder='Enter email address' />
-          <i className='fa fa-paper-plane'></i>
-        </div>
-      </div>
-    </section>
-      <footer>
-        <div className='container padding'>
-          <div className='box logo'>
-            <h1>ARWellness</h1>
-            <span>VR WELLNESS SOLUTIONS FOR SENIORS</span>
-            <p>Enhancing seniors' quality of life through VR-based physical therapy, cognitive training, and social connection.</p>
->>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
 
             <i className='fab fa-facebook-f icon'></i>
             <i className='fab fa-twitter icon'></i>
@@ -54,15 +33,9 @@ const Footer = () => {
             <ul>
               <li>About Us</li>
               <li>Services</li>
-<<<<<<< HEAD
-              <li>Courses</li>
-              <li>Blog</li>
-              <li>Contact us</li>
-=======
               <li>Programs</li>
               <li>Blog</li>
-              <li>Contact Us</li>
->>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
+              <li>Contact us</li>
             </ul>
           </div>
           <div className='box link'>
@@ -71,25 +44,14 @@ const Footer = () => {
               <li>Contact Us</li>
               <li>Pricing</li>
               <li>Terms & Conditions</li>
-<<<<<<< HEAD
-              <li>Privacy</li>
-              <li>Feedbacks</li>
+              <li>Privacy Policy</li>
+              <li>Feedback</li>
             </ul>
           </div>
           {/* <div className='box'>
             <h3>Recent Post</h3>
             {blog.slice(0, 3).map((val) => (
               <div className='items flexSB'>
-=======
-              <li>Privacy Policy</li>
-              <li>Feedback</li>
-            </ul>
-          </div>
-          <div className='box'>
-            <h3>Recent Posts</h3>
-            {blog.slice(0, 3).map((val) => (
-              <div className='items flexSB' key={val.id}>
->>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
                 <div className='img'>
                   <img src={val.cover} alt='' />
                 </div>
@@ -106,7 +68,6 @@ const Footer = () => {
                 </div>
               </div>
             ))}
-<<<<<<< HEAD
           </div> */}
           <div className='box last'>
             <h3>Have a Questions?</h3>
@@ -122,23 +83,6 @@ const Footer = () => {
               <li>
                 <i className='fa fa-paper-plane'></i>
                 notfound@nitrrgmail.com
-=======
-          </div>
-          <div className='box last'>
-            <h3>Have Questions?</h3>
-            <ul>
-              <li>
-                <i className='fa fa-map'></i>
-                123 Wellness St., Virtual World, Immersive City, VR
-              </li>
-              <li>
-                <i className='fa fa-phone-alt'></i>
-                +1 800 123 4567
-              </li>
-              <li>
-                <i className='fa fa-paper-plane'></i>
-                support@arwellness.com
->>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
               </li>
             </ul>
           </div>
@@ -146,13 +90,8 @@ const Footer = () => {
       </footer>
       <div className='legal'>
         <p>
-<<<<<<< HEAD
-          Copyright ©2024 All rights reserved | 
-        </p>Team Not Found
-=======
-          Copyright ©2024 All rights reserved | This platform is developed with <i className='fa fa-heart'></i> by Team NotFound
+        Copyright ©2024 All rights reserved | This platform is developed with <i className='fa fa-heart'></i> by Team NotFound
         </p>
->>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
       </div>
     </>
   )

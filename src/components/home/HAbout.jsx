@@ -1,25 +1,14 @@
 import React from "react"
-<<<<<<< HEAD
 import OnlineCourses from "../allcourses/OnlineCourses"
 import Heading from "../common/heading/Heading"
 import "../allcourses/courses.css"
 import { coursesCard } from "../../dummydata"
-=======
-import { coursesCard } from "../../dummydata"
-import "../allcourses/courses.css"
-import OnlineCourses from "../allcourses/OnlineCourses"
-import Heading from "../common/heading/Heading"
->>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
 
 const HAbout = () => {
   return (
     <>
       <section className='homeAbout'>
         <div className='container'>
-<<<<<<< HEAD
-=======
-          <Heading subtitle='our courses' title='explore our popular programs' />
->>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
 
           <div className='coursesCard'>
             {/* copy code form  coursesCard */}
