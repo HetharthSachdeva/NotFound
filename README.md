@@ -1,8 +1,5 @@
-# NotFound
+Project Demo : https://scintillating-smakager-860376.netlify.app/  
 
-The Codeutsav submission project of Team NotFound!!
-Team-Members:
-1) Mayank Verma
-2) Leora Saharia
-3) Vedant Dubey
-4) Hetharth Sachdeva
+Project Video : https://www.youtube.com/watch?v=KkQATIXBY5w&ab_channel=GorkCoder
+
+![screencapture-scintillating-smakager-860376-netlify-app-2023-06-18-11_57_15](https://github.com/sunil9813/Education-Website-Using-ReactJS/assets/67497228/37450154-6e7a-45fd-9793-c731dcc56e2b)
