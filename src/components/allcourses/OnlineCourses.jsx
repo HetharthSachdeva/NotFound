@@ -1,14 +1,14 @@
 import React from "react"
+import "./courses.css"
 import { online } from "../../dummydata"
 import Heading from "../common/heading/Heading"
-import "./courses.css"
 
 const OnlineCourses = () => {
   return (
     <>
       <section className='online'>
         <div className='container'>
-          <Heading subtitle='COURSES' title='Browse Our Programs' />
+          <Heading subtitle='Games' title='Explore Our Engaging Games' />
           <div className='content grid3'>
             {online.map((val) => (
               <div className='box'>

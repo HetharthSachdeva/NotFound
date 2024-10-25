@@ -7,7 +7,7 @@ const Testimonal = () => {
   return (
     <>
       <section className='testimonal padding'>
-        <div className='container'>
+        {/* <div className='container'>
           <Heading subtitle='TESTIMONIAL' title='Our Successful Students' />
 
           <div className='content grid2'>
@@ -27,7 +27,7 @@ const Testimonal = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   )

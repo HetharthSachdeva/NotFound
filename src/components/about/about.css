@@ -1,5 +1,6 @@
 .aboutHome {
   height: auto;
+  padding-block: 20vh;
 }
 .aboutHome #heading {
   text-align: left;
@@ -23,7 +24,7 @@
   transition: 0.5s;
 }
 .aboutHome .img {
-  width: 100px;
+  width: 200px;
 }
 .aboutHome img {
   width: 70px;
@@ -76,6 +77,9 @@
     width: 100%;
   }
   .awrapper {
-    height: 50vh;
+    height: 70vh;
+  }
+  .left img{
+    display:none;
   }
 }
