@@ -1,6 +1,11 @@
 import React from "react"
+<<<<<<< HEAD
 import "../blog/blog.css"
 import { blog } from "../../dummydata"
+=======
+import { blog } from "../../dummydata"
+import "../blog/blog.css"
+>>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
 import Heading from "../common/heading/Heading"
 
 // copy code of blog => blogCard
@@ -10,7 +15,11 @@ const Hblog = () => {
     <>
       <section className='blog'>
         <div className='container'>
+<<<<<<< HEAD
           {/* <Heading subtitle='OUR BLOG' title='Recent From Blog' /> */}
+=======
+          <Heading subtitle='OUR BLOG' title='Recent From Blog' />
+>>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
           <div className='grid2'>
             {blog.slice(0, 3).map((val) => (
               <div className='items shadow'>

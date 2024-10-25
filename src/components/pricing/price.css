@@ -5,7 +5,7 @@
 .price h1 {
   font-size: 50px;
   margin: 20px 0;
-  color: #1eb2a6;
+  color: #7726bd;
 }
 .price h1 span {
   font-size: 20px;
@@ -40,7 +40,11 @@
   padding: 20px;
 }
 .faq .accordion:hover {
+<<<<<<< HEAD
   background-color: #1eb2a6;
+=======
+  background-color: #7726bd;
+>>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
   color: #fff;
 }
 

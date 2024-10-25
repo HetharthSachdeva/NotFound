@@ -1,5 +1,9 @@
 .hero {
+<<<<<<< HEAD
   background-image: url("../../../../public/images/bg1.png");
+=======
+  background-image: url("https://cdn.pixabay.com/photo/2022/10/04/21/25/pink-7499159_640.jpg");
+>>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
@@ -8,11 +12,17 @@
   z-index: -1;
   width: 100%;
   height: 100vh;
+<<<<<<< HEAD
   padding-top: 20%;
   padding-right: 50px;
   color: #fff;
   padding-bottom: 326px;
 
+=======
+  padding-top: 10%;
+  padding-right: 40px;
+  color: #fff;
+>>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
 }
 .hero #heading h3 {
   color: #fff;
@@ -22,13 +32,18 @@
   margin: 0;
   padding: 0;
 }
+<<<<<<< HEAD
 
 
 @media screen and (max-width: 976px) {
+=======
+@media screen and (max-width: 768px) {
+>>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
   .margin {
     height: 40vh;
   }
   .hero {
+<<<<<<< HEAD
     background-position: center;
     padding-top: 50%;
     height: 80vh;
@@ -36,11 +51,19 @@
   }
   .start{
     display:none;
+=======
+    background-position: right;
+    padding-top: 50%;
+    height: 80vh;
+>>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
   }
   .hero .row {
     width: 100%;
   }
+<<<<<<< HEAD
   .hero p {
     display: contents;
   }
+=======
+>>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
 }

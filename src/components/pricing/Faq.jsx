@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useRef, useState } from "react"
+=======
+import React, { useState } from "react"
+>>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
 import { faq } from "../../dummydata"
 import Heading from "../common/heading/Heading"
 

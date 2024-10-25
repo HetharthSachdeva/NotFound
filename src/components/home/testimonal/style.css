@@ -15,7 +15,11 @@
   position: absolute;
   bottom: 0;
   left: 60px;
+<<<<<<< HEAD
   background-color: #1eb2a6;
+=======
+  background-color: #7726bd;
+>>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
   color: #fff;
 }
 .testimonal .name {
@@ -26,7 +30,11 @@
   margin-bottom: 5px;
 }
 .testimonal .name span {
+<<<<<<< HEAD
   color: #1eb2a6;
+=======
+  color: #7726bd;
+>>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
 }
 .testimonal p {
   margin-top: 20px;
@@ -34,7 +42,11 @@
   transition: 0.5s;
 }
 .testimonal .items:hover {
+<<<<<<< HEAD
   background-color: #1eb2a6;
+=======
+  background-color: #7726bd;
+>>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
   color: #fff;
   cursor: pointer;
 }
@@ -44,5 +56,9 @@
 }
 .testimonal .items:hover i {
   background-color: #fff;
+<<<<<<< HEAD
   color: #1eb2a6;
+=======
+  color: #7726bd;
+>>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
 }

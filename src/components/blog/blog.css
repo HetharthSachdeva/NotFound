@@ -13,12 +13,17 @@
   transition: 0.5s;
 }
 .blog h1:hover {
+<<<<<<< HEAD
   color: #1eb2a6;
+=======
+  color: #7726bd;
+>>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
   cursor: pointer;
 }
 .blog span {
   text-transform: uppercase;
   font-weight: 500;
+<<<<<<< HEAD
   color: #1eb2a6;
 }
 .blog span label {
@@ -31,4 +36,18 @@
 }
 .blog p {
   color: grey;
+=======
+  color: #5631ce;
+}
+.blog span label {
+  margin-left: 10px;
+  color: rgb(108, 96, 109);
+  font-size: 14px;
+}
+.blog span:nth-last-child(1) label {
+  color: #7726bd;
+}
+.blog p {
+  color: rgb(108, 96, 109);
+>>>>>>> 8f7605b55e684c50cd994a4920463be88c312da7
 }
