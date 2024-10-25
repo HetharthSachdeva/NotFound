@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
 import './Signup.css'
-import { signup, login } from '../../config/firebase'
+import { Signup, Login } from '../../config/firebase'
+import {useNavigate} from 'react-router-dom'
 
-const Signup = () => {
-
+const SignupPage = () => {
+  const navigate = useNavigate();
   const [currState, setCurrState] = useState("Sign Up");
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -12,11 +13,13 @@ const Signup = () => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     if(currState==="Sign Up"){
-      signup(username, email, password);
+      Signup(username, email, password);
+      navigate("/");
+
     }  
     else{
-        login(email, password).then(() => {
-           
+        Login(email, password).then(() => {
+           navigate("/");
            console.log("Login successful");
         }).catch((error) => {
             console.error("Login failed: ", error);
@@ -47,4 +50,4 @@ const Signup = () => {
   )
 }
 
-export default Signup
+export default SignupPage

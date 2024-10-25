@@ -4,7 +4,6 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { getFirestore, setDoc, doc } from "firebase/firestore";
 import { signInWithEmailAndPassword } from "firebase/auth";
-
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -27,7 +26,8 @@ const auth = getAuth(app);
 
 const db = getFirestore(app);
 
-const signup = async (username,email, password) => {
+//Signup function
+const Signup = async (username,email, password) => {
     try{
         const res = await createUserWithEmailAndPassword(auth, email, password);
         const user = res.user;
@@ -45,7 +45,9 @@ const signup = async (username,email, password) => {
         console.error(error);
     }
 }
-const login = async (email, password) => {
+
+//Login function
+const Login = async (email, password) => {
     try{
         const res = await signInWithEmailAndPassword(auth, email, password);
         const user = res.user;
@@ -55,4 +57,4 @@ const login = async (email, password) => {
     }
 }
 
-export {signup, login}
+export {Signup, Login}
