@@ -20,9 +20,9 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <Link to="/" style={{ textDecoration: "none" }}>
-          <span className="logo">VRWELL</span>
-        </Link>
+        {/* <Link to="/" style={{ textDecoration: "none" }}> */}
+        <span className="logo">VRWELL</span>
+        {/* </Link> */}
       </div>
       <hr />
       <div className="center">
@@ -63,13 +63,13 @@ const Sidebar = () => {
             <span>Notifications</span>
           </li>
           <p className="title">SERVICE</p>
-          <li>
+          {/* <li>
             <SettingsSystemDaydreamOutlinedIcon className="icon" />
             <span>System Health</span>
-          </li>
+          </li> */}
           <li>
             <PsychologyOutlinedIcon className="icon" />
-            <span>Logs</span>
+            <span>Resouces</span>
           </li>
           <li>
             <SettingsApplicationsIcon className="icon" />

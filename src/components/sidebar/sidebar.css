@@ -3,17 +3,22 @@
   border-right: 0.5px solid rgb(230, 227, 227);
   min-height: 100vh;
   background-color: white;
+  padding-top: 0;;
 
   .top {
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #6439ff;
+
 
     .logo {
       font-size: 20px;
       font-weight: bold;
-      color: #6439ff;
+      /* color: #6439ff; */
+      color : #fff;
+      background-color: #6439ff;
     }
   }
 

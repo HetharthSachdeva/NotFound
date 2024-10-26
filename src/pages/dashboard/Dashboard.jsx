@@ -36,14 +36,14 @@ const VRDashboard = () => {
     <>
       <div className="dashboard-header">
         <Sidebar />
-        <div>
+        <div className="right-row">
           <div className="dashboard-container">
             <h1 className="dashboard-title">VR Experiences</h1>
 
             <div className="dashboard-controls">
               <LocalSearchBar onSearch={handleSearch} placeholder="Search for VR options" />
-              <Filter selectedFilter={filter} onFilterChange={handleFilterChange} />
-            </div>
+              {/* <Filter selectedFilter={filter} onFilterChange={handleFilterChange} /> */}
+            </div>  
 
             <div className="vr-options">
               {vrOptions.length > 0 ? (
@@ -63,8 +63,8 @@ const VRDashboard = () => {
               <DailyActivity />
             </div>
             <div className="right">
-              <Graph />
-              <Stepstrack />
+              <div className="upper"><Graph /></div>
+              <div className="lower"><Stepstrack /></div>
             </div>
          
           </div>

@@ -15,7 +15,7 @@ const LocalSearchBar = ({ onSearch, placeholder }) => {
         onChange={(e) => setInput(e.target.value)}
         placeholder={placeholder}
       />
-      <button onClick={handleSearch}>Search</button>
+      <button className="btn"onClick={handleSearch}>Search</button>
     </div>
   );
 };
