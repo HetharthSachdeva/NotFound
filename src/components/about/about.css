@@ -54,32 +54,34 @@
   background-position: center;
   height: 30vh;
   color: #fff;
+  text-align: center; /* Centering text */
 }
+
 .awrapper .box {
   padding: 70px 0;
 }
+
 .awrapper img {
   margin-right: 30px;
 }
+
 .awrapper h1 {
   font-size: 50px;
 }
+
 .awrapper h3 {
   font-size: 20px;
   font-weight: 500;
 }
-/*----------awrapper------------*/
+
+/* Counter specific styles */
+.awrapper span {
+  font-weight: bold; /* Make the counter bold */
+}
+
+/* Responsive adjustments */
 @media screen and (max-width: 768px) {
-  .aboutHome .container {
-    flex-direction: column-reverse;
-  }
-  .aboutHome .row {
-    width: 100%;
-  }
   .awrapper {
     height: 70vh;
-  }
-  .left img{
-    display:none;
   }
 }
