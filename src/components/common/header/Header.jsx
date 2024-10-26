@@ -21,13 +21,13 @@ const Header = () => {
               <Link to='/'>Home</Link>
             </li>
             <li>
-              <Link to='/team'>Dashboard</Link>
-            </li>
-            <li>
               <Link to='/courses'>VR/AR Games</Link>
             </li>
             <li>
               <Link to='/about'>Features</Link>
+            </li>
+            <li>
+              <Link to='/team'>Team</Link>
             </li>
           </ul>
           <div className='start'>

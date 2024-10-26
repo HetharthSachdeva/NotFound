@@ -1,5 +1,4 @@
 import React from "react"
-import { blog } from "../../../dummydata"
 import "./footer.css"
 
 const Footer = () => {
@@ -20,8 +19,8 @@ const Footer = () => {
       <footer>
         <div className='container padding'>
           <div className='box logo'>
-            <h1>ACADEMIA</h1>
-            <span>A VR/AR COMPANION</span>
+            <h1>VRWell</h1>
+            <span>A VR COMPANION</span>
             <p>Your Personalized Guide to Wellness in Every Reality</p>
 
             <i className='fab fa-facebook-f icon'></i>

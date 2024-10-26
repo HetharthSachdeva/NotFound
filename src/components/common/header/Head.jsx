@@ -10,8 +10,8 @@ const Head = () => {
       <section className='head'>
         <div className='container flexSB' data-aos="fade-right" data-aos-duration="2000">
           <div className='logo' >
-            <h1>VRWellness</h1>
-            <span>VR/AR COMPANION</span>
+            <h1>VRWell</h1>
+            <span>VR COMPANION</span>
           </div>
 
           <div className='social'>
