@@ -2,17 +2,27 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const VRCard = ({ option }) => {
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    history.push(`/vr-experience/${option.id}`);
+    navigate(`/${option.stream}`); // Use appropriate option ID or stream path
   };
 
   return (
     <div className="vr-card" onClick={handleClick}>
-      <img src={option.image} alt={option.name} />
+      <img src={option.thumbnail} alt={option.name} />
       <h3>{option.name}</h3>
-      <p>{option.description}</p>
+      <div className="vr-tags">
+        {option.tags && option.tags.length > 0 ? (
+          option.tags.map((tag, index) => (
+            <span key={index} className="vr-tag">
+              {tag}
+            </span>
+          ))
+        ) : (
+          <p>No tags available</p>
+        )}
+      </div>
     </div>
   );
 };

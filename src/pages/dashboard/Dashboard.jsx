@@ -16,10 +16,11 @@ const VRDashboard = () => {
 
   useEffect(() => {
     const fetchVROptions = async () => {
-      const result = await getAllVROptions({ searchQuery, filter, page });
+      const result = await getAllVROptions();
       
-      setVROptions(result.vrOptions || []);
-      setIsNext(result.isNext);
+      setVROptions(result.vrOptions || []); 
+      // Here, you could implement pagination logic to set isNext based on your data.
+      setIsNext(result.vrOptions.length > 0); // Set to true if there are more options
     };
     fetchVROptions();
   }, [searchQuery, filter, page]);
@@ -27,9 +28,6 @@ const VRDashboard = () => {
   const handleSearch = (query) => setSearchQuery(query);
   const handleFilterChange = (newFilter) => setFilter(newFilter);
   const handlePageChange = (newPage) => setPage(newPage);
-
-  // Sidebar component defined within VRDashboard
-
 
   return (
     <>
@@ -44,7 +42,7 @@ const VRDashboard = () => {
           </div>
 
           <div className="vr-options">
-            {vrOptions.length > 0 && vrOptions.Options !== null ? (
+            {vrOptions.length > 0 ? (
               vrOptions.map((option) => <VRCard key={option.id} option={option} />)
             ) : (
               <div className="no-options">

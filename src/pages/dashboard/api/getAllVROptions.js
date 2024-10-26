@@ -8,9 +8,9 @@ export const getAllVROptions = async () => {
       id: doc.id,
       ...doc.data(),
     }));
-    return vrOptions;
+    return { vrOptions }; // Return an object with vrOptions
   } catch (error) {
     console.error("Error fetching VR options:", error);
-    return [];
+    return { vrOptions: [] }; // Return an object to match the expected format
   }
 };
