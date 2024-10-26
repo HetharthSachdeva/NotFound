@@ -1,5 +1,5 @@
- Basic reset for box-sizing
-*{
+/* Global Reset */
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,15 +8,16 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f6f9;
+  color: #333333;
 }
 
-/* Sidebar styling */
+/* Sidebar Styling */
 .dashboard-header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 250px 1fr;
 }
 
 .sidebar {
-  width: 250px;
   background-color: #2f3b52;
   color: #ffffff;
   min-height: 100vh;
@@ -28,6 +29,7 @@ body {
   text-decoration: none;
   padding: 15px;
   display: block;
+  transition: background-color 0.3s;
 }
 
 .sidebar a.active,
@@ -36,14 +38,14 @@ body {
   color: #f4f6f9;
 }
 
-/* Main container styling */
+/* Main Container Styling */
 .dashboard-container {
-  width: calc(100% - 250px);
+  width: 100%;
   padding: 20px;
   background-color: #ffffff;
   border-radius: 12px;
   margin: 20px;
-  box-shadow: 0 4px 8px rgba(78, 25, 191, 0.727);
+  box-shadow: 0 4px 8px rgba(78, 25, 191, 0.2);
 }
 
 .dashboard-title {
@@ -53,7 +55,7 @@ body {
   color: #333333;
 }
 
-/* Controls styling */
+/* Controls Styling */
 .dashboard-controls {
   display: flex;
   align-items: center;
@@ -68,6 +70,12 @@ body {
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #f4f6f9;
+  transition: border-color 0.3s;
+}
+
+.dashboard-controls input:focus,
+.dashboard-controls select:focus {
+  border-color: #4f83cc;
 }
 
 .dashboard-controls button {
@@ -78,13 +86,14 @@ body {
   color: white;
   border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .dashboard-controls button:hover {
   background-color: #3d6db7;
 }
 
-/* VR Options styling */
+/* VR Options Styling */
 .vr-options {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -95,14 +104,33 @@ body {
   grid-column: 1 / -1;
   text-align: center;
   color: #999999;
+  font-style: italic;
 }
 
-/* VR Card styling */
+.no-options p {
+  margin-top: 10px;
+}
+
+.create-link {
+  color: #4f83cc;
+  text-decoration: none;
+}
+
+.create-link:hover {
+  text-decoration: underline;
+}
+
+/* VR Card Styling */
 .vr-card {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(192, 45, 255, 0.874);
+  box-shadow: 0 2px 4px rgba(192, 45, 255, 0.2);
+  transition: transform 0.2s;
+}
+
+.vr-card:hover {
+  transform: translateY(-5px);
 }
 
 .vr-card h2 {
@@ -116,16 +144,7 @@ body {
   color: #666666;
 }
 
-.create-link {
-  color: #4f83cc;
-  text-decoration: none;
-}
-
-.create-link:hover {
-  text-decoration: underline;
-}
-
-/* Pagination styling */
+/* Pagination Styling */
 .pagination {
   display: flex;
   justify-content: center;
@@ -140,9 +159,84 @@ body {
   margin: 0 4px;
   border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #3d6db7;
 }
 
 .pagination button:disabled {
   background-color: #cccccc;
   cursor: not-allowed;
+}
+
+/* Dashboard Graph Section */
+.dashboard-graph {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-graph .left, .dashboard-graph .right {
+  flex: 1;
+}
+
+.dashboard-graph > .left, 
+.dashboard-graph > .right {
+  max-width: 100%;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.left .daily-activity, .right .steps-track {
+  max-width: 100%;
+  max-height: 300px; /* Adjust as needed */
+  overflow-y: auto; /* Allow scroll if content is too tall */
+}
+
+.dashboard-graph > div {
+  max-width: 48%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dashboard-graph > div:hover {
+  transform: scale(1.02);
+}
+
+.dashboard-graph h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dashboard-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .dashboard-graph {
+    flex-direction: column;
+  }
+
+  .dashboard-graph > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }

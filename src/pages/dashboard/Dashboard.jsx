@@ -6,6 +6,9 @@ import VRCard from "./VRCard";
 import { getAllVROptions } from "./api/getAllVROptions"; 
 import "./Dashboard.css"; 
 import Sidebar from "../../components/sidebar/Sidebar";
+import Graph from "../../components/Graph/graph";
+import Stepstrack from "../../components/steptrack/Steptrack";
+import DailyActivity from "../../components/dailyactivity/Dailyactivity";
 
 const VRDashboard = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -28,32 +31,48 @@ const VRDashboard = () => {
   const handleFilterChange = (newFilter) => setFilter(newFilter);
   const handlePageChange = (newPage) => setPage(newPage);
 
+
   return (
     <>
       <div className="dashboard-header">
         <Sidebar />
-        <div className="dashboard-container">
-          <h1 className="dashboard-title">VR Experiences</h1>
+        <div>
+          <div className="dashboard-container">
+            <h1 className="dashboard-title">VR Experiences</h1>
 
-          <div className="dashboard-controls">
-            <LocalSearchBar onSearch={handleSearch} placeholder="Search for VR options" />
-            <Filter selectedFilter={filter} onFilterChange={handleFilterChange} />
+            <div className="dashboard-controls">
+              <LocalSearchBar onSearch={handleSearch} placeholder="Search for VR options" />
+              <Filter selectedFilter={filter} onFilterChange={handleFilterChange} />
+            </div>
+
+            <div className="vr-options">
+              {vrOptions.length > 0 ? (
+                vrOptions.map((option) => <VRCard key={option.id} option={option} />)
+              ) : (
+                <div className="no-options">
+                  <p>No VR options available</p>
+                  <a href="/create-vr-option" className="create-link">Create your first VR experience!</a>
+                </div>
+              )}
+            </div>
+
+            <Pagination currentPage={page} isNext={isNext} onPageChange={handlePageChange} />
           </div>
-
-          <div className="vr-options">
-            {vrOptions.length > 0 ? (
-              vrOptions.map((option) => <VRCard key={option.id} option={option} />)
-            ) : (
-              <div className="no-options">
-                <p>No VR options available</p>
-                <a href="/create-vr-option" className="create-link">Create your first VR experience!</a>
-              </div>
-            )}
+          <div className="dashboard-graph">
+            <div className="left">
+              <DailyActivity />
+            </div>
+            <div className="right">
+              <Graph />
+              <Stepstrack />
+            </div>
+         
           </div>
-
-          <Pagination currentPage={page} isNext={isNext} onPageChange={handlePageChange} />
         </div>
+        
       </div>
+
+      
     </>
   );
 };
