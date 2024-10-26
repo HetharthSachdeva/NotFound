@@ -14,12 +14,12 @@ const SignupPage = () => {
     e.preventDefault();
     if(currState==="Sign Up"){
       Signup(username, email, password);
-      navigate("/");
+      navigate("/dashboard");
 
     }  
     else{
         Login(email, password).then(() => {
-           navigate("/");
+           navigate("/dashboard");
            console.log("Login successful");
         }).catch((error) => {
             console.error("Login failed: ", error);
@@ -39,7 +39,7 @@ const SignupPage = () => {
         
         <div className="login-term">
           {currState==="Sign Up"?<input type="checkbox" required/>:null}
-          {currState==="Sign Up"?<p>Agree that Hetharth Sachdeva is the best person ever</p>:null}
+          {currState==="Sign Up"?<p>Remember me</p>:null}
         </div>
         {currState==="Sign Up"? <button type='submit' className="form-button">Create Account</button>:<button type='submit' className="form-button">Login Now</button>}
         <div className="login-forgot">

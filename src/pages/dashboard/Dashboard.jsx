@@ -19,8 +19,7 @@ const VRDashboard = () => {
       const result = await getAllVROptions();
       
       setVROptions(result.vrOptions || []); 
-      // Here, you could implement pagination logic to set isNext based on your data.
-      setIsNext(result.vrOptions.length > 0); // Set to true if there are more options
+      setIsNext(result.vrOptions.length > 0); 
     };
     fetchVROptions();
   }, [searchQuery, filter, page]);
