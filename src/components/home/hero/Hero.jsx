@@ -19,8 +19,6 @@ const Hero = () => {
             <p>
               Experience a unified platform that enhances physical health, cognitive functions, and social connection. Tailored specifically for seniors, our VR Wellness Companion offers immersive exercises, brain-stimulating games, and virtual meetups.
             </p>
-
-            <p>Experience a unified platform that enhances physical health, cognitive functions, and social connection. Tailored specifically for seniors, our VR Wellness Companion offers immersive exercises, brain-stimulating games, and virtual meetups.</p>
             
 
           </div>
