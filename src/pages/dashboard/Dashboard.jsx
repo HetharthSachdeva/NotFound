@@ -5,6 +5,7 @@ import LocalSearchBar from "./LocalSearchBar";
 import VRCard from "./VRCard";
 import { getAllVROptions } from "./api/getAllVROptions"; 
 import "./Dashboard.css"; 
+import Sidebar from "../../components/sidebar/Sidebar";
 
 const VRDashboard = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -28,6 +29,11 @@ const VRDashboard = () => {
   const handlePageChange = (newPage) => setPage(newPage);
 
   return (
+    <>
+    <div className="dashboard-header">
+      <Sidebar />
+    </div>
+
     <div className="dashboard-container">
       <h1 className="dashboard-title">VR Experiences</h1>
 
@@ -49,6 +55,7 @@ const VRDashboard = () => {
 
       <Pagination currentPage={page} isNext={isNext} onPageChange={handlePageChange} />
     </div>
+    </>
   );
 };
 
