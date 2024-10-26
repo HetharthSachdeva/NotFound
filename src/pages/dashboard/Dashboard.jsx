@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Filter from "./Filter";
 import Pagination from "./Pagination";
 import LocalSearchBar from "./LocalSearchBar";
 import VRCard from "./VRCard";
@@ -28,7 +27,6 @@ const VRDashboard = () => {
   }, [searchQuery, filter, page]);
 
   const handleSearch = (query) => setSearchQuery(query);
-  const handleFilterChange = (newFilter) => setFilter(newFilter);
   const handlePageChange = (newPage) => setPage(newPage);
 
 
