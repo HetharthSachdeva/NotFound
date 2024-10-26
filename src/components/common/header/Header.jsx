@@ -30,9 +30,10 @@ const Header = () => {
               <Link to='/team'>Team</Link>
             </li>
           </ul>
+          <Link to='/signup' className='login-btn'>
           <div className='start'>
-            <div className='button'>LOGOUT</div>
-          </div>
+          <div className='button'>Get Started</div>
+          </div></Link>
           <button className='toggle' onClick={() => setClick(!click)}>
             {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}
           </button>

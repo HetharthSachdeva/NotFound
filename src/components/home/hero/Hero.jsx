@@ -17,7 +17,7 @@ const Hero = () => {
             <Heading subtitle='WELCOME TO VRWell' title='Ultimate VR Wellness Partner' />
             <p>Experience a unified platform that enhances physical health, cognitive functions, and social connection. Tailored specifically for seniors, our VR Wellness Companion offers immersive exercises, brain-stimulating games, and virtual meetups.</p>
             <div className='button'>
-              <Link to='/signup'><button>
+              <Link href='/signup'><button>
                 GET STARTED NOW <i className='fa fa-long-arrow-alt-right'></i></button>
               </Link>
               <Link to='/signup'><button>
