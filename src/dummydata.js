@@ -53,38 +53,38 @@ export const online = [
     cover: "https://blog.mimbus.com/hubfs/Imported_Blog_Media/Outil-de-formation-1.jpg",
     hoverCover: "./images/courses/online/posture-training-hover.png",
     courseName: "Music & Dance",
-    course: "15 Programs",
-  },
-  {
-    cover: "https://blog.mimbus.com/hubfs/Imported_Blog_Media/Outil-de-formation-1.jpg",
-    hoverCover: "./images/courses/online/posture-training-hover.png",
-    courseName: "Posture Training",
-    course: "15 Programs",
-  },
-  {
-    cover: "https://program-ace.com/wp-content/uploads/vr-healthcare-rehabilitation-app-2.jpg",
-    hoverCover: "./images/courses/online/palm-exercises-hover.png",
-    courseName: "Palm & Grip Exercises",
-    course: "12 Programs",
-  },
-  {
-    cover: "https://www.fxmweb.com/assets/images/content/insights/the-benefits-of-virtual-and-augmented-reality-for-older-adults--big.jpg",
-    hoverCover: "./images/courses/online/memory-training-hover.png",
-    courseName: "Memory Enhancement Games",
-    course: "20 Programs",
-  },
-  {
-    cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ19th-0gRFQqFi7r3lMQ6PyMlU9bBAEDCNA&s",
-    hoverCover: "./images/courses/online/mindfulness-hover.png",
-    courseName: "Mindfulness & Relaxation",
-    course: "10 Programs",
   },
   {
     cover: "https://drawandcode.com/wp-content/uploads/2023/05/virtual-reality-in-social.jpg",
     hoverCover: "./images/courses/online/social-interaction-hover.png",
     courseName: "Social Interaction Meetups",
-    course: "8 Programs",
+
+  },
+  {
+    cover: "https://program-ace.com/wp-content/uploads/vr-healthcare-rehabilitation-app-2.jpg",
+    hoverCover: "./images/courses/online/palm-exercises-hover.png",
+    courseName: "Palm & Grip Exercises",
+
+  },
+  {
+    cover: "https://blog.mimbus.com/hubfs/Imported_Blog_Media/Outil-de-formation-1.jpg",
+    hoverCover: "./images/courses/online/posture-training-hover.png",
+    courseName: "Posture Training",
+  },
+  
+  {
+    cover: "https://www.fxmweb.com/assets/images/content/insights/the-benefits-of-virtual-and-augmented-reality-for-older-adults--big.jpg",
+    hoverCover: "./images/courses/online/memory-training-hover.png",
+    courseName: "Memory Enhancement Games",
+
+  },
+  {
+    cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ19th-0gRFQqFi7r3lMQ6PyMlU9bBAEDCNA&s",
+    hoverCover: "./images/courses/online/mindfulness-hover.png",
+    courseName: "Mindfulness & Relaxation",
+
   }
+
 ]
 export const team = [
   {

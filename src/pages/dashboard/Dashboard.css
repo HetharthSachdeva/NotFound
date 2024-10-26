@@ -1,21 +1,148 @@
-/* Dashboard.css */
+/* Basic reset for box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+}
+
+/* Sidebar styling */
+.dashboard-header {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2f3b52;
+  color: #ffffff;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+  background-color: #6f15ac;
+  color: #f4f6f9;
+}
+
+/* Main container styling */
 .dashboard-container {
-    padding: 20px;
-  }
-  .vr-options {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .vr-card {
-    width: 200px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  .vr-card:hover {
-    transform: scale(1.05);
-  }
-  
+  width: calc(100% - 250px);
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(78, 25, 191, 0.727);
+}
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+/* Controls styling */
+.dashboard-controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-controls input,
+.dashboard-controls select {
+  padding: 8px 12px;
+  font-size: 14px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f4f6f9;
+}
+
+.dashboard-controls button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  background-color: #4f83cc;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dashboard-controls button:hover {
+  background-color: #3d6db7;
+}
+
+/* VR Options styling */
+.vr-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.vr-options .no-options {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #999999;
+}
+
+/* VR Card styling */
+.vr-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(192, 45, 255, 0.874);
+}
+
+.vr-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #7d48b6;
+}
+
+.vr-card p {
+  font-size: 14px;
+  color: #666666;
+}
+
+.create-link {
+  color: #4f83cc;
+  text-decoration: none;
+}
+
+.create-link:hover {
+  text-decoration: underline;
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #4f83cc;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 4px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
