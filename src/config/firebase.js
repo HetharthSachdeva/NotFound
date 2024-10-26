@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from "firebase/analytics";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { getFirestore, setDoc, doc } from "firebase/firestore";
 import { signInWithEmailAndPassword } from "firebase/auth";
@@ -57,4 +57,4 @@ const Login = async (email, password) => {
     }
 }
 
-export {Signup, Login}
+export {Signup, Login, db}

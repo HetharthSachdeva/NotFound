@@ -11,6 +11,7 @@ import Contact from "./components/contact/Contact"
 import Home from "./components/home/Home"
 import SignupPage from "./pages/signup/Signup"
 import Footer from "./components/common/footer/Footer"
+import Dashboard from "./pages/dashboard/Dashboard" 
 
 function App() {
   return (
@@ -21,11 +22,12 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/courses' element={<CourseHome/>} />
-          <Route exact path='/team' element={<Team/>} />
-          <Route exact path='/pricing' element={<Pricing/>} />
-          <Route exact path='/journal' element={<Blog/>} />
-          <Route exact path='/contact' element={<Contact/>} />
-          <Route exact path='/signup' element={<SignupPage/>} />
+          <Route path='/team' element={<Team/>} />
+          <Route path='/pricing' element={<Pricing/>} />
+          <Route path='/journal' element={<Blog/>} />
+          <Route path='/contact' element={<Contact/>} />
+          <Route path='/signup' element={<SignupPage/>} />
+          <Route path="/dashboard" element={<Dashboard/>} />
         </Routes>
         <Footer />
       </Router>

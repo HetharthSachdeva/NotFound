@@ -1,0 +1,21 @@
+/* Dashboard.css */
+.dashboard-container {
+    padding: 20px;
+  }
+  .vr-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .vr-card {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .vr-card:hover {
+    transform: scale(1.05);
+  }
+  
