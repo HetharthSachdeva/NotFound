@@ -1,17 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Line } from "react-chartjs-2";
 import { Chart as ChartJS, LineElement, CategoryScale, LinearScale, PointElement, Tooltip, Legend } from "chart.js";
+import { getDocumentIds, getDocumentValues } from "../../config/firebase";
 
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Tooltip, Legend);
 
 const Graph = () => {
-  // Sample data simulating heart rate (BPM)
+  const [labelData, setLabelData] = useState([]);
+  const [valueData, setValueData] = useState([]);
+
+  useEffect(() => {
+    // Fetch document IDs asynchronously and set them as labels
+    const fetchLabels = async () => {
+      const labels = await getDocumentIds("Users", "7QhV72jd6Cs1dgE1yzxR", "Biometrics");
+      setLabelData(labels);
+    };
+
+    fetchLabels();
+  
+      const fetchValues = async () => { 
+      const values = await getDocumentValues("Users", "7QhV72jd6Cs1dgE1yzxR", "Biometrics");
+      setValueData(values);
+    };
+    fetchValues();
+  }, []);  
+
   const data = {
-    labels: ["1s", "2s", "3s", "4s", "5s", "6s", "7s", "8s", "9s", "10s"], // Time labels
+    labels: labelData, 
     datasets: [
       {
         label: "Heart Rate (BPM)",
-        data: [72, 75, 70, 74, 77, 76, 73, 78, 72, 75], // Dummy heart rate data
+        data: valueData, // Dummy heart rate data
         borderColor: "rgba(255, 99, 132, 1)", // Line color
         backgroundColor: "rgba(255, 99, 132, 0.2)", // Fill color
         pointBackgroundColor: "rgba(255, 99, 132, 1)", // Point color

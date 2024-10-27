@@ -7,11 +7,11 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 const DailyActivity = () => {
   // Sample data for daily activities
   const data = {
-    labels: ["Sleep", "Work", "Exercise", "Leisure", "Meals", "Other"],
+    labels: ["Physical Exercises", "Cognitive Skills", "Social", "Exploration"],
     datasets: [
       {
         label: "Hours Spent",
-        data: [8, 9, 1, 3, 2, 1], // Number of hours for each activity
+        data: [8, 1, 3, 2], // Number of hours for each activity
         backgroundColor: [
           "rgba(54, 162, 235, 0.7)",  // Blue for Sleep
           "rgba(255, 99, 132, 0.7)",  // Red for Work

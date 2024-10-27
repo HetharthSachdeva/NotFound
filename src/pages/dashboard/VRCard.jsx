@@ -5,7 +5,11 @@ const VRCard = ({ option }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/${option.stream}`); // Use appropriate option ID or stream path
+    if (option.Link.startsWith("http://") || option.Link.startsWith("https://")) {
+      window.location.href = option.Link;
+    } else {
+      navigate(`${option.Link}`); // Use appropriate option ID or stream path
+    }
   };
 
   return (

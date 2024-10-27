@@ -2,7 +2,7 @@
 import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { getFirestore, setDoc, doc } from "firebase/firestore";
+import { getFirestore, setDoc, doc, collection, getDocs } from "firebase/firestore";
 import { signInWithEmailAndPassword } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -57,4 +57,26 @@ const Login = async (email, password) => {
     }
 }
 
-export {Signup, Login, db}
+export const getDocumentIds = async (collectionName, userId, subCollection) => {
+    try {
+        const colRef = collection(db, collectionName, userId, subCollection);
+        const snapshot = await getDocs(colRef);
+        const ids = snapshot.docs.map(doc => doc.id);
+        return ids;
+    } catch (error) {
+        console.error("Error fetching document IDs:", error);
+        throw error; // Rethrow or handle as needed
+    }
+};
+export const getDocumentValues = async (collectionName, userId, subCollection) => {
+    try {
+        const colRef = collection(db, collectionName, userId, subCollection);
+        const snapshot = await getDocs(colRef);
+        const heartbeats = snapshot.docs.map(doc => doc.data().Heartbeats);
+        return heartbeats;
+    } catch (error) {
+        console.error("Error fetching document IDs:", error);
+        throw error; // Rethrow or handle as needed
+    }
+};
+export {Signup, Login, db }
