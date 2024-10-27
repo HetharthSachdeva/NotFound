@@ -28,7 +28,7 @@ const DataTable = () => {
   
 
   return (
-    <div className="container">
+    <div className="datacontainer">
       <Sidebar />
       <div className="table-container">
       <table className="activity-table">
