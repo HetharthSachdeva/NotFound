@@ -14,9 +14,13 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 import { Link } from "react-router-dom";
 // import { DarkModeContext } from "../../context/darkModeContext";
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 const Sidebar = () => {
   // const { dispatch } = useContext(DarkModeContext);
+  const navigate = useNavigate();
+
   return (
     <div className="sidebar">
       <div className="top">
@@ -28,8 +32,8 @@ const Sidebar = () => {
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
-          <li>
-            <DashboardIcon className="icon" />
+          <li onClick={() => navigate("/Dashboard")}>
+            <InsertChartIcon className="icon" />
             <span>Dashboard</span>
           </li>
           {/* <p className="title">LISTS</p> */}
@@ -54,7 +58,7 @@ const Sidebar = () => {
             <span>Delivery</span>
           </li> */}
           <p className="title">USEFUL</p>
-          <li>
+          <li onClick={() => navigate("/DataTable")}>
             <InsertChartIcon className="icon" />
             <span>Stats</span>
           </li>
