@@ -27,22 +27,22 @@ export const homeAbout = [
 export const awrapper = [
   {
     cover: "https://img.icons8.com/ios/80/ffffff/heartbeat.png",
-    data: "1,000+",
+    data: "1,000",
     title: "IMPROVED PHYSICAL HEALTH",
   },
   {
     cover: "https://img.icons8.com/ios/80/ffffff/brain.png",
-    data: "800+",
+    data: "800",
     title: "MENTAL HEALTH BOOST",
   },
   {
     cover: "https://img.icons8.com/ios/80/ffffff/speech-bubble.png",
-    data: "500+",
+    data: "500",
     title: "VIRTUAL MEETUPS",
   },
   {
     cover: "https://img.icons8.com/ios/80/ffffff/medical-doctor.png",
-    data: "300+",
+    data: "300",
     title: "CAREGIVERS SUPPORTED",
   }
 ]

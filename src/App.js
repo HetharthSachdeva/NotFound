@@ -35,6 +35,8 @@ function App() {
         <Route path='/vrscene' element={<VRScene />} />
         {/* <Route path='/datatable' element={<DataTable />} /> */}
 
+        <Route path='/datatable' element={<DataTable/>} />
+
       </Routes>
 
       <Footer />

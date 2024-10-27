@@ -1,13 +1,10 @@
-body {
-  font-family: Arial, sans-serif; /* Set a default font for the body */
-}
 
 .table-container {
   margin: 20px;
   overflow-x: auto;
 }
 
-.container{
+.datacontainer{
   display :grid;
   grid-template-columns: .7fr 3fr;
   margin-inline : 0;

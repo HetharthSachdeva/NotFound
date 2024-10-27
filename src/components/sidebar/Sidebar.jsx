@@ -16,9 +16,11 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
+
 const Sidebar = () => {
   // const { dispatch } = useContext(DarkModeContext);
   const navigate = useNavigate();
+
   return (
     <div className="sidebar">
       <div className="top">
@@ -30,8 +32,8 @@ const Sidebar = () => {
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
-          <li>
-            <DashboardIcon className="icon" />
+          <li onClick={() => navigate("/Dashboard")}>
+            <InsertChartIcon className="icon" />
             <span>Dashboard</span>
           </li>
           {/* <p className="title">LISTS</p> */}
