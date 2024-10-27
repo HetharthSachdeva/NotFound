@@ -12,7 +12,8 @@ import Home from "./components/home/Home"
 import SignupPage from "./pages/signup/Signup"
 import Footer from "./components/common/footer/Footer"
 import Dashboard from "./pages/dashboard/Dashboard" 
-
+import VRScene from "./pages/memory/memory"
+import DataTable from "./pages/datatable/DataTable"
 function App() {
   const location = useLocation();
 
@@ -31,6 +32,9 @@ function App() {
         <Route path='/contact' element={<Contact/>} />
         <Route path='/signup' element={<SignupPage/>} />
         <Route path='/dashboard' element={<Dashboard/>} />
+        <Route path='/vrscene' element={<VRScene />} />
+        {/* <Route path='/datatable' element={<DataTable />} /> */}
+
       </Routes>
 
       <Footer />

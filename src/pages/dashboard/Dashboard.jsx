@@ -8,6 +8,7 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import Graph from "../../components/Graph/graph";
 import Stepstrack from "../../components/steptrack/Steptrack";
 import DailyActivity from "../../components/dailyactivity/Dailyactivity";
+import AIAnswerComponent from "../../components/AI/AIAnswer";
 
 const VRDashboard = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -59,6 +60,7 @@ const VRDashboard = () => {
           <div className="dashboard-graph">
             <div className="left">
               <DailyActivity />
+              <AIAnswerComponent/>
             </div>
             <div className="right">
               <div className="upper"><Graph /></div>
